@@ -53,7 +53,7 @@ export default {
         else this.$router.push("/login");
     },
     activated() {
-        document.title = this.$t("titles.playlists") + " - Piped";
+        document.title = this.$t("titles.playlists") + " - Metastem Play";
     },
     methods: {
         fetchPlaylists() {
