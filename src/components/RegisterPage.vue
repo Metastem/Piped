@@ -47,7 +47,7 @@ export default {
         }
     },
     activated() {
-        document.title = "Register - Piped";
+        document.title = "Register - Metastem Play";
     },
     methods: {
         register() {
