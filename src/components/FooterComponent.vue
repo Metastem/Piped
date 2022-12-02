@@ -1,6 +1,6 @@
 <template>
     <footer class="text-center py-4 rounded-xl children:(mx-3) w-full mt-10 mb-5">
-        <a aria-label="Search" href="https://metastem.su/" target="_blank">
+        <a aria-label="Metastem" href="https://metastem.su/" target="_blank">
             <span class="ml-2" v-t="'actions.source_code'" />
         </a>
     </footer>
