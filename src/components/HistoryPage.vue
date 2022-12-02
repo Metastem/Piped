@@ -60,7 +60,7 @@ export default {
         })();
     },
     activated() {
-        document.title = "Watch History - Piped";
+        document.title = "Watch History - Metastem Play";
     },
     methods: {
         clearHistory() {
