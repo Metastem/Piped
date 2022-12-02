@@ -69,7 +69,7 @@ export default {
         },
     },
     activated() {
-        document.title = "Import - Piped";
+        document.title = "Import - Metastem Play";
     },
     methods: {
         fileChange() {
