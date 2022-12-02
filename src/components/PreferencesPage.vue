@@ -273,46 +273,6 @@
             />
         </label>
     </div>
-    <h2 class="text-center" v-t="'titles.instance'" />
-    <label class="pref" for="ddlInstanceSelection">
-        <strong v-text="`${$t('actions.instance_selection')}:`" />
-        <select id="ddlInstanceSelection" v-model="selectedInstance" class="select w-auto" @change="onChange($event)">
-            <option
-                v-for="instance in instances"
-                :key="instance.name"
-                :value="instance.api_url"
-                v-text="instance.name"
-            />
-        </select>
-    </label>
-    <label class="pref" for="chkAuthInstance">
-        <strong v-text="`${$t('actions.different_auth_instance')}:`" />
-        <input
-            id="chkAuthInstance"
-            v-model="authInstance"
-            class="checkbox"
-            type="checkbox"
-            @change="onChange($event)"
-        />
-    </label>
-    <template v-if="authInstance">
-        <label class="pref" for="ddlAuthInstanceSelection">
-            <strong v-text="`${$t('actions.instance_auth_selection')}:`" />
-            <select
-                id="ddlAuthInstanceSelection"
-                v-model="selectedAuthInstance"
-                class="select w-auto"
-                @change="onChange($event)"
-            >
-                <option
-                    v-for="instance in instances"
-                    :key="instance.name"
-                    :value="instance.api_url"
-                    v-text="instance.name"
-                />
-            </select>
-        </label>
-    </template>
     <br />
 
     <!-- options that are visible only when logged in -->
