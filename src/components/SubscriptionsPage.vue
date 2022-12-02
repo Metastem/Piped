@@ -52,7 +52,7 @@ export default {
         });
     },
     activated() {
-        document.title = "Subscriptions - Piped";
+        document.title = "Subscriptions - Metastem Play";
     },
     methods: {
         async fetchSubscriptions() {
