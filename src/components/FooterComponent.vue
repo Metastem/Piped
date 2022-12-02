@@ -1,6 +1,7 @@
 <template>
-    <footer class="text-center py-4 rounded-xl children:(mx-3) w-full mt-10 mb-5">
-        <a aria-label="Metastem" href="https://metastem.su/" target="_blank"></a>
+import anarchy from "./fonts/anarchaos.ttf"
+    <footer class="anarchy">
+        <h1>METASTEM</h1>
     </footer>
 </template>
 
