@@ -88,7 +88,7 @@ export default {
         this.getChannelData();
     },
     activated() {
-        if (this.channel && !this.channel.error) document.title = this.channel.name + " - Piped";
+        if (this.channel && !this.channel.error) document.title = this.channel.name + " - Metastem Play";
         window.addEventListener("scroll", this.handleScroll);
         if (this.channel && !this.channel.error) this.updateWatched(this.channel.relatedStreams);
     },
@@ -129,7 +129,7 @@ export default {
                 .then(data => (this.channel = data))
                 .then(() => {
                     if (!this.channel.error) {
-                        document.title = this.channel.name + " - Piped";
+                        document.title = this.channel.name + " - Metastem Play";
                         this.contentItems = this.channel.relatedStreams;
                         this.fetchSubscribedStatus();
                         this.updateWatched(this.channel.relatedStreams);
