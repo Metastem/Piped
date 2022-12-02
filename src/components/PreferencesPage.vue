@@ -305,36 +305,6 @@
         </div>
         <br />
     </div>
-    <h2 id="instancesList" v-t="'actions.instances_list'" />
-    <table class="table">
-        <thead>
-            <tr>
-                <th v-t="'preferences.instance_name'" />
-                <th v-t="'preferences.instance_locations'" />
-                <th v-t="'preferences.has_cdn'" />
-                <th v-t="'preferences.registered_users'" />
-                <th class="lt-md:hidden" v-t="'preferences.version'" />
-                <th v-t="'preferences.up_to_date'" />
-                <th v-t="'preferences.ssl_score'" />
-            </tr>
-        </thead>
-        <tbody v-for="instance in instances" :key="instance.name">
-            <tr>
-                <td v-text="instance.name" />
-                <td v-text="instance.locations" />
-                <td v-text="`${instance.cdn ? '&#9989;' : '&#10060;'}`" />
-                <td v-text="instance.registered" />
-                <td class="lt-md:hidden" v-text="instance.version" />
-                <td v-text="`${instance.up_to_date ? '&#9989;' : '&#10060;'}`" />
-                <td>
-                    <a :href="sslScore(instance.api_url)" target="_blank" v-t="'actions.view_ssl_score'" />
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br />
-    <p v-t="'info.preferences_note'" />
-    <br />
     <button class="btn" v-t="'actions.reset_preferences'" @click="resetPreferences()" />
     <button class="btn mx-4" v-t="'actions.backup_preferences'" @click="backupPreferences()" />
     <label for="fileSelector" class="btn" v-t="'actions.restore_preferences'" @click="restorePreferences()" />
