@@ -1,6 +1,5 @@
 <template>
-import anarchy from "./fonts/anarchaos.ttf"
-    <footer class="anarchy">
+    <footer>
         <h1>METASTEM</h1>
     </footer>
 </template>
