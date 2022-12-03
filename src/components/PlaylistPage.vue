@@ -103,7 +103,7 @@ export default {
                 .then(() => this.updateTitle());
         },
         async updateTitle() {
-            document.title = this.playlist.name + " - Piped";
+            document.title = this.playlist.name + " - Metastem Play";
         },
         handleScroll() {
             if (this.loading || !this.playlist || !this.playlist.nextpage) return;
