@@ -7,9 +7,7 @@
                     src="/img/icons/logo.svg"
                     height="32"
                     width="32"
-                    class="w-10 mr-[-0.6rem]"
-                /></router-link
-            >
+            </router-link>
         </div>
         <div class="lt-md:hidden search-container">
             <input
