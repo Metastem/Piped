@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <h1>METASTEM</h1>
+        <h4>METASTEM Play</h4>
     </footer>
 </template>
 
